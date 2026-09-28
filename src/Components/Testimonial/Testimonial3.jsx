@@ -1,5 +1,8 @@
 import React from 'react';
-import Slider from 'react-slick';
+import Sliderc from 'react-slick';
+const Slider = Sliderc.default || Sliderc
+
+
 
 const Testimonial3 = () => {
 

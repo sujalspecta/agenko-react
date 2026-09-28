@@ -11,29 +11,29 @@ const Services4 = () => {
       ]; 
 
     return (
-        <section class="agk-services">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
+        <section className="agk-services">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-12">
                         
-                        <div class="section-title mb-60 text-center pf_zoomIn">
-                            <span class="sub-title">Our Service</span>
+                        <div className="section-title mb-60 text-center pf_zoomIn">
+                            <span className="sub-title">Our Service</span>
                             <h2>Top Services We Offer</h2>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-12">
+                <div className="row">
+                    <div className="col-lg-12">
                     {serviceContent.map((item, i) => (
-                        <div key={i} class="agenko-card-item style-two mb-10 pf_fadeup">
-                            <div class="thumbnail">
+                        <div key={i} className="agenko-card-item style-two mb-10 pf_fadeup">
+                            <div className="thumbnail">
                                 <img src={item.img} alt="Card Image" />
                             </div>
-                            <div class="card-title">
+                            <div className="card-title">
                                 <h2><Link to="/service/service-details">{item.title}</Link></h2>
                                 <h4>{item.subTitle}</h4>
                             </div>
-                            <div class="content">
+                            <div className="content">
                                 <p>{item.content}</p>
                             </div>
                         </div>
